@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "frontend": "npm start --prefix ./frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "build": "npm run build:server && npm run build:client",
+    "build": "npm run build:server && npm run build:frontend",
     "build:server": "npm run build --prefix ./server",
     "build:frontend": "npm run build --prefix ./frontend"
   },
