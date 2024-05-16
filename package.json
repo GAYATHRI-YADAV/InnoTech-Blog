@@ -9,7 +9,7 @@
     "frontend": "npm start --prefix ./frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "build": "npm run build:server && npm run build:frontend",
-    "build:server": "npm run build server",
+    "build:server": "npm run server",
     "build:frontend": "npm run build --prefix ./frontend"
   },
   "author": "gayathri",
