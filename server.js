@@ -26,8 +26,8 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 //routes
-app.use('/api/v1/user',userRoutes);
-app.use('/api/v1/blog',blogRoutes);
+app.use('https://innotech.onrender.com/api/v1/user',userRoutes);
+app.use('https://innotech.onrender.com/api/v1/blog',blogRoutes);
 
 app.listen(port,()=>{
     console.log(`server running on port ${port}`);
