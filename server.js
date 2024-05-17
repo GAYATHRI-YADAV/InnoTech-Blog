@@ -22,7 +22,7 @@ const app = express()
 
 //middelwares
 app.use(cors({
-    "origin":"https://inno-tech-blog.netlify.app/"
+    "origin":"https://inno-tech-blog.netlify.app"
 }))
 app.use(express.json())
 app.use(morgan('dev'))
