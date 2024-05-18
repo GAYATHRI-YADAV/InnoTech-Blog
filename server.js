@@ -21,13 +21,13 @@ const port = process.env.PORT || 8080;
 const app = express()
 
 //middelwares
-app.use(cors({origin: 'https://inno-tech-blog.netlify.app'}))
+app.use(cors())
 app.use(express.json())
 app.use(morgan('dev'))
 
 //routes
-app.use('https://innotech.onrender.com/api/v1/user',userRoutes);
-app.use('https://innotech.onrender.com/api/v1/blog',blogRoutes);
+app.use('/api/v1/user',userRoutes);
+app.use('/api/v1/blog',blogRoutes);
 
 app.listen(port,()=>{
     console.log(`server running on port ${port}`);
