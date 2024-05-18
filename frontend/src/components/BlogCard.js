@@ -31,7 +31,7 @@ export default function BlogCard({
 
   const handleDelete = async () => {
     try {
-      const { data } = await axios.delete(`/api/v1/blog/delete-blog/${id}`);
+      const { data } = await axios.delete(`https://innotech-blog-wqds.onrender.com/api/v1/blog/delete-blog/${id}`);
       if (data?.success) {
         toast.success("Blog Deleted");
         window.location.reload();
@@ -42,16 +42,6 @@ export default function BlogCard({
   };
   const readContent = async () => {
     navigate(`/blog-content/${id}`)
-    // try {
-    //   const { data } = await axios.get(`/api/v1/blog/get-blog/${id}`);
-    //   if (data?.success) {
-    //     toast.success("Blog opened");
-    //     navigate(`/blog-content/${id}`);
-    //     window.location.reload();
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
   };
   return (
     <Card
